@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sci-Fi Portfolio - Red Accent</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: #0b0c10;
+    color: #ff4c4c;
+    font-family: 'Roboto Mono', monospace;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: linear-gradient(90deg, #2e0b0b, #b32e2e);
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 2px solid #b32e2e;
+    box-shadow: 0 0 15px #b32e2e;
+  }
+
+  header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow:
+      0 0 5px #b32e2e,
+      0 0 10px #b32e2e,
+      0 0 20px #ff4c4c,
+      0 0 30px #ff4c4c,
+      0 0 40px #b32e2e;
+    animation: flicker 3s infinite;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    color: #d1a1a1;
+    margin-top: 0.2rem;
+    font-style: italic;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #b32e2e;
+    padding-bottom: 0.3rem;
+    letter-spacing: 2px;
+  }
+
+  p {
+    line-height: 1.6;
+    color: #d1a1a1;
+  }
+
+  .contact-links {
+    display: inline-flex;
+    gap: 1.5rem;
+  }
+
+  .contact-links a {
+    color: #ff4c4c;
+    font-size: 1.8rem;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .contact-links a:hover {
+    color: #b32e2e;
+  }
+
+  .contact-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #ff4c4c;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+
+  .contact-links a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+  @keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      opacity: 1;
+      text-shadow:
+        0 0 5px #b32e2e,
+        0 0 10px #b32e2e,
+        0 0 20px #ff4c4c,
+        0 0 30px #ff4c4c,
+        0 0 40px #b32e2e;
+    }
+    20%, 22%, 24%, 55% {
+      opacity: 0.7;
+      text-shadow: none;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>IMANDITO ABTHAL AKBAR</h1>
+  <p>"If you're not a good shot today, don't worry. There are other ways to be useful."</p>
+</header>
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Lulusan baru berusia 21 tahun dengan keahlian di bidang Internet of Things (IoT), pengembangan web, dan desain web. Memiliki pengalaman dalam proyek pengawasan berbasis teknologi serta pengembangan aplikasi web. Antusias, disiplin, dan terbiasa bekerja dalam tim untuk mencapai target teknis secara kolaboratif.</p>
+  </section>
+
+  <section id="career">
+    <h2>Experience</h2>
+    <p><strong>Operator BOS – SD Negeri Jatimulyo 01</strong><br>Jan 2025 - Saat ini (4 bulan)<br>Mengelola administrasi dan pelaporan BOS menggunakan ARKAS, bertanggung jawab atas input data, penyusunan laporan keuangan, dan kelengkapan dokumen sesuai regulasi.</p>
+    <p><strong>Intern – PT. Habibi Digital Nusantara</strong><br>Sep 2023 - Des 2023 (4 bulan)<br>Mengembangkan aplikasi web (frontend dan backend) sebagai fullstack developer. Mendesain PCB menggunakan Eagle untuk proyek IoT. Melakukan wiring, soldering, dan perakitan PCB untuk pengaplikasian teknologi di lapangan.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Politeknik Negeri Jember</strong> | A.Md.T, Teknik Komputer (2021 - 2024)</p>
+    <p><strong>SMA Negeri 3 Lumajang</strong> | IPA & Biologi (2018 - 2021)</p>
+    <p><strong>SMP Negeri 1 Kunir</strong> | (2015 - 2018)</p>
+    <p><strong>SDN Kunir Lor 1</strong> | (2009 - 2015)</p>
+    <p><strong>TK Dharma Wanita Kunir</strong> | (2007 - 2009)</p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <p>VSGA Junior Network Administrator – Digital Talent Scholarship, 2023</p>
+    <p>Microsoft Office Specialist (MOS) – Politeknik Negeri Jember, 2024</p>
+    <p>Certificate English Proficiency Test – Politeknik Negeri Jember, 2024</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Informatika</li>
+      <li>CSS</li>
+      <li>HTML</li>
+      <li>Arduino IDE</li>
+      <li>Arduino</li>
+      <li>Python Programming</li>
+      <li>Internet of Things</li>
+      <li>Website Development</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out!</p>
+    <div class="contact-links">
+      <a href="mailto:john.doe@example.com" title="Email">&#9993;</a>
+      <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener" title="LinkedIn">&#128100;</a>
+      <a href="https://github.com/johndoe" target="_blank" rel="noopener" title="GitHub">&#128187;</a>
+      <a href="https://twitter.com/johndoe" target="_blank" rel="noopener" title="Twitter">&#128037;</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>
